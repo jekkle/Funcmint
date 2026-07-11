@@ -28,7 +28,9 @@
 
 **Title:** FuncMint — 12 pure, tested utility functions, sold once or pay-per-call via x402
 
-> I got tired of rewriting loan amortization and IBAN validation from scratch, so I built a small library of pure, unit-tested functions (financial math, parsing, validation, unit conversion) and I'm selling it two ways: a one-time license for developers, and a pay-per-call x402 endpoint for AI agents that just need the calculation once and don't want to install anything.
+**URL to submit:** https://funcmint.vercel.app
+
+> I got tired of rewriting loan amortization and IBAN validation from scratch, so I built a small library of pure, unit-tested functions (financial math, parsing, validation, unit conversion) and I'm selling it two ways: a one-time license for developers (https://jekkle.gumroad.com/l/jxnkvc), and a pay-per-call x402 endpoint for AI agents that just need the calculation once and don't want to install anything — live on Base mainnet at funcmint.vercel.app/api/call/{fn}.
 >
 > Everything is stateless and PII-free by design. Tests + source included. Curious what functions people would want added next.
 
@@ -36,8 +38,22 @@
 
 **Title:** I sold the same 12 functions twice — once to humans, once to AI agents
 
-> Built a tiny utility-function library (financial calcs, parsers, validators, converters) and shipped it on two rails at once: a traditional one-time Gumroad license, and an x402 pay-per-call HTTP endpoint so an AI agent can pay $0.02 in USDC and get the result with zero signup. Same code, two customer types. Happy to share what worked and what I'd change.
+> Built a tiny utility-function library (financial calcs, parsers, validators, converters) and shipped it on two rails at once: a traditional one-time Gumroad license (https://jekkle.gumroad.com/l/jxnkvc), and an x402 pay-per-call HTTP endpoint so an AI agent can pay $0.02 in real USDC on Base and get the result back with zero signup (funcmint.vercel.app). Same code, two customer types. Happy to share what worked and what I'd change.
+>
+> Example call for anyone who wants to poke at it:
+> ```
+> curl -X POST https://funcmint.vercel.app/api/call/slugify \
+>   -H "Content-Type: application/json" \
+>   -d '{"args": ["Hello World"]}'
+> ```
+> (Returns an HTTP 402 with payment instructions — that's the x402 protocol working as intended, not a bug.)
+
+## Reddit r/programming or r/SideProject draft (optional extra channel)
+
+**Title:** Built a utility-function library that AI agents can pay for per-call (x402), sold the same code as a normal Gumroad product too
+
+> Same pitch as above, slightly more casual — good for a subreddit audience. Reuse the dev.to body, drop the code block if the sub doesn't like inline commands.
 
 ---
 
-*Note: these are drafts for you to review, tweak to your voice, and post from your own accounts — bot-posted content on HN/Indie Hackers/dev.to tends to get filtered or read as inauthentic.*
+*Post these from your own accounts, in your own voice — feel free to edit before posting. Bot-posted content on HN/Indie Hackers/dev.to tends to get filtered or read as inauthentic, so treat these as a starting draft, not a final copy-paste.*
