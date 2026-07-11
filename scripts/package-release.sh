@@ -10,7 +10,7 @@ mkdir -p "$STAGE"
 cp -r src/functions "$STAGE/functions"
 cp -r tests "$STAGE/tests"
 cp LICENSE-COMMERCIAL.md "$STAGE/LICENSE.md"
-cp docs/funcmint/buyer-README.md "$STAGE/README.md"
+cp docs/buyer-README.md "$STAGE/README.md"
 
 rm -f release/funcmint.zip
 powershell -NoProfile -Command "Compress-Archive -Path 'release/funcmint/*' -DestinationPath 'release/funcmint.zip' -Force"
