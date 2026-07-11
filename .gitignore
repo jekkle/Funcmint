@@ -1,8 +1,7 @@
 node_modules/
+.next/
 dist/
 release/
 .env
+.env.local
 *.log
-.claude-flow/
-.swarm/
-ruvector.db
